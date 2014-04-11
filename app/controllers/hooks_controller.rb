@@ -1,6 +1,5 @@
 class HooksController < ApplicationController
   def recieve
-    puts params
-    render json: ''
+    render json: params.to_json
   end
 end
