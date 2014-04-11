@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  root 'hooks#recieve'
+  post '/', to: 'hooks#recieve'
 end
