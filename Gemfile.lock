@@ -40,6 +40,8 @@ GEM
     execjs (2.0.2)
     faraday (0.8.9)
       multipart-post (~> 1.2.0)
+    haml (4.0.5)
+      tilt
     hike (1.2.3)
     i18n (0.6.9)
     idobata (0.0.7)
@@ -109,6 +111,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+  haml
   idobata
   jbuilder (~> 2.0)
   jquery-rails
