@@ -1,5 +1,7 @@
 class HooksController < ApplicationController
   def recieve
-    render json: params.to_json
+    Idobata.hook_url = ENV['IDOBATA_URL']
+    Idobata::Message.create(source: "Hello, Idobata!")
+    render json: ''
   end
 end
