@@ -5,7 +5,7 @@
   %a{href: "#{json['vcs_url']}/compare/#{json['branch']}"}= json['branch']
   \- #{json['vcs_revision'][0..5]}:
   )
-  - if json['status'] == 'success'
+  - if json['status'].in? %w(success fixed)
     %span.label.label-success= json['status']
   -else
     %span.label.label-important= json['status']
